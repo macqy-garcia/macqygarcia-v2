@@ -1,15 +1,21 @@
 # Macqy Garcia Portfolio Website Documentation
 
 ## Project Overview
-This documentation outlines the structure, components, and implementation details for Macqy Garcia's personal portfolio website. The website serves to showcase professional experience, skills, and projects as a Senior Software Engineer with 9+ years of experience.
+
+This documentation outlines the structure, components, and implementation
+details for Macqy Garcia's personal portfolio website. The website serves to
+showcase professional experience, skills, and projects as a Senior Software
+Engineer with 9+ years of experience.
 
 ## Tech Stack
+
 - **Frontend Framework**: React.js with Vite
 - **Styling**: TailwindCSS
 - **Deployment**: Vercel (current portfolio is at macqygarcia.vercel.app)
 - **Version Control**: Git
 
 ## Project Structure
+
 ```
 macqy-portfolio/
 ├── public/
@@ -57,7 +63,9 @@ macqy-portfolio/
 ## Component Design
 
 ### Home Page Structure
+
 1. **Hero Section**
+
    - Professional photo
    - Name: Macqy Garcia
    - Title: Senior Software Engineer
@@ -65,11 +73,14 @@ macqy-portfolio/
    - Call to action buttons (View Resume, Contact Me)
 
 2. **About Section**
+
    - Extended professional summary
-   - Personal interests (Web Design, Basketball, Table Tennis, Hiking, Car Modification, Travelling)
+   - Personal interests (Web Design, Basketball, Table Tennis, Hiking, Car
+     Modification, Travelling)
    - Professional goals
 
 3. **Experience Section**
+
    - Timeline-based layout showing career progression
    - Company cards with:
      - Position
@@ -79,10 +90,13 @@ macqy-portfolio/
    - Current and previous roles:
      - Senior Software Engineer at ING Hubs (Nov 2024 - Present)
      - Senior Software Engineer at Indra PH (July 2023 - December 2024)
-     - Mid Software Engineer at "We move people and things" (April 2022 - August 2024)
-     - Software Engineer at Department of the Interior and Local Government (September 2015 - April 2022)
+     - Mid Software Engineer at "We move people and things" (April 2022 -
+       August 2024)
+     - Software Engineer at Department of the Interior and Local Government
+       (September 2015 - April 2022)
 
 4. **Skills Section**
+
    - Interactive skill cards organized by categories:
      - Programming Languages
      - Frontend/Libraries
@@ -94,6 +108,7 @@ macqy-portfolio/
      - Testing
 
 5. **Education Section**
+
    - Bachelor of Science in Information Technology
    - Our Lady of Fatima University (2009 - 2013)
 
@@ -117,6 +132,7 @@ macqy-portfolio/
 ## Theme and Styling
 
 ### Color Palette
+
 - Primary: #0d47a1 (Dark Blue)
 - Secondary: #e65100 (Orange)
 - Background: #ffffff (White) / #121212 (Dark Mode)
@@ -124,6 +140,7 @@ macqy-portfolio/
 - Accent: #00acc1 (Teal)
 
 ### Typography
+
 - Headings: Inter, sans-serif
 - Body: Roboto, sans-serif
 - Code/Technical: Fira Code, monospace
@@ -131,18 +148,22 @@ macqy-portfolio/
 ## Features to Implement
 
 1. **Dark Mode Toggle**
+
    - Implemented using React Context API
    - Persisted using localStorage
 
 2. **Interactive Timeline**
+
    - Animated scrolling for experience section
    - Visual indicators for timeline progression
 
 3. **Skill Visualization**
+
    - Progress bars or radar charts showing skill proficiency
    - Filterable skill badges by category
 
 4. **Project Showcase**
+
    - Gallery of projects with:
      - Screenshots
      - Technologies used
@@ -150,6 +171,7 @@ macqy-portfolio/
      - Links to live demo/GitHub
 
 5. **Dynamic Resume**
+
    - Interactive version of resume
    - Option to download PDF version
 
@@ -160,10 +182,12 @@ macqy-portfolio/
 ## Deployment Strategy
 
 1. **Development Workflow**
+
    - Local development using Vite dev server
    - Git for version control
 
 2. **Build Process**
+
    - Optimize assets and bundle size
    - Generate static files using Vite build
 
@@ -175,10 +199,12 @@ macqy-portfolio/
 ## Performance Considerations
 
 1. **Code Splitting**
+
    - Lazy load components not needed for initial render
    - Use dynamic imports for heavy components
 
 2. **Image Optimization**
+
    - Use WebP format where possible
    - Implement responsive images with srcset
    - Lazy load images below the fold
@@ -191,6 +217,7 @@ macqy-portfolio/
 ## Accessibility Considerations
 
 1. **WCAG Compliance**
+
    - Proper heading hierarchy
    - Sufficient color contrast
    - Keyboard navigation support
@@ -204,14 +231,17 @@ macqy-portfolio/
 ## Future Enhancements
 
 1. **Blog Section**
+
    - Technical articles/tutorials
    - Professional insights
 
 2. **Interactive Portfolio**
+
    - 3D elements with Three.js
    - Interactive code examples
 
 3. **Testimonials**
+
    - Feedback from colleagues and clients
 
 4. **Advanced Contact Options**
