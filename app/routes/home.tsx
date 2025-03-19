@@ -21,7 +21,10 @@ export default function Home() {
 			<section className="space-y-5">
 				{Array.from({ length: 10 - 1 + 1 }, (_, i) => 1 + i).map(
 					(item: number) => (
-						<div className="w-full h-72 block rounded-lg bg-neutral-800" />
+						<div
+							key={item}
+							className="w-full h-72 block rounded-lg bg-neutral-800"
+						/>
 					),
 				)}
 			</section>
