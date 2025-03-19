@@ -105,7 +105,7 @@ export const Navigation = () => {
 
 				{/* Menu with animation */}
 				<aside
-					className={`w-3/4 md:w-1/2 lg:w-1/3 h-screen fixed top-0 left-0 overflow-y-hidden z-40 text-2xl font-light p-5 flex flex-col justify-between bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white transition-all duration-300 ease-in-out ${
+					className={`px-5 w-3/4 md:w-1/2 lg:w-1/3 h-screen fixed top-0 left-0 overflow-y-hidden z-40 text-2xl font-light p-5 flex flex-col justify-between bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white transition-all duration-300 ease-in-out ${
 						active ? 'opacity-100' : 'opacity-0 pointer-events-none'
 					}`}
 				>
