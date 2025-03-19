@@ -76,7 +76,7 @@ export const Navigation = () => {
 	}, []);
 
 	return (
-		<header className="text-neutral-900 dark:text-white">
+		<header className="pt-7 text-neutral-900 dark:text-white">
 			<nav className="flex justify-between text-xs">
 				<div>
 					<div className="flex gap-1">
@@ -85,7 +85,7 @@ export const Navigation = () => {
 						<h1>Macqy Garcia</h1>
 					</div>
 					<p className="text-neutral-500 dark:text-neutral-400 max-w-3/4">
-						A Senior Software Engineer specializing in modern web technologies
+						A software engineer specializing in modern web technologies
 					</p>
 				</div>
 				<button

@@ -15,13 +15,15 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
 	return (
-		<main className="px-5 py-7 space-y-5">
-			<Navigation />
+		<main className="space-y-5">
+			<div className="px-5">
+				<Navigation />
+			</div>
 			<Hero />
-			<section className="space-y-5">
-				{Array.from({ length: 10 - 1 + 1 }, (_, i) => 1 + i).map(
+			<section className="px-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+				{Array.from({ length: 12 - 1 + 1 }, (_, i) => 1 + i).map(
 					(item: number) => (
-						<div
+						<figure
 							key={item}
 							className="w-full h-72 block rounded-lg bg-neutral-800"
 						/>

@@ -30,23 +30,24 @@ export default function Blog() {
 	return (
 		<section className="p-5 space-y-12">
 			<Navigation />
+			<div className="space-y-12 lg:grid lg:grid-cols-2 lg:gap-5">
+				{list.map((item, index) => (
+					<article key={index} className="space-y-2 text-xs text-neutral-400">
+						{/* Year Date */}
+						<header className="text-neutral-400">{item.year}</header>
 
-			{list.map((item, index) => (
-				<article key={index} className="space-y-2 text-xs text-neutral-400">
-					{/* Year Date */}
-					<header className="text-neutral-400">{item.year}</header>
+						{/* Position & Company */}
+						<h3 className="text-neutral-200">
+							<a href={item.url}>
+								<span>{item.title}</span>
+							</a>
+						</h3>
 
-					{/* Position & Company */}
-					<h3 className="text-neutral-200">
-						<a href={item.url}>
-							<span>{item.title}</span>
-						</a>
-					</h3>
-
-					{/* Summary */}
-					<p className="text-neutral-300">{item.subtitle}</p>
-				</article>
-			))}
+						{/* Summary */}
+						<p className="text-neutral-300">{item.subtitle}</p>
+					</article>
+				))}
+			</div>
 		</section>
 	);
 }

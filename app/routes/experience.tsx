@@ -53,39 +53,43 @@ export default function Experience() {
 		},
 	];
 	return (
-		<section className="p-5 space-y-12">
-			<Navigation />
+		<section className="space-y-12">
+			<div className="px-5">
+				<Navigation />
+			</div>
 
-			{list.map((item, index) => (
-				<article key={index} className="space-y-2 text-xs text-neutral-400">
-					{/* Year Date */}
-					<header className="text-neutral-300">{item.yearDate}</header>
+			<div className="p-5 space-y-12 lg:grid lg:grid-cols-2 lg:gap-5">
+				{list.map((item, index) => (
+					<article key={index} className="space-y-2 text-xs text-neutral-400">
+						{/* Year Date */}
+						<header className="text-neutral-300">{item.yearDate}</header>
 
-					{/* Position & Company */}
-					<h3 className="text-neutral-200">
-						<a href={item.companySite}>
-							<span>{item.position}</span>
-							<span> • </span>
-							<span>{item.company}</span>
-						</a>
-					</h3>
+						{/* Position & Company */}
+						<h3 className="text-neutral-200">
+							<a href={item.companySite}>
+								<span>{item.position}</span>
+								<span> • </span>
+								<span>{item.company}</span>
+							</a>
+						</h3>
 
-					{/* Summary */}
-					<p>{item.summary}</p>
+						{/* Summary */}
+						<p>{item.summary}</p>
 
-					{/* Tech Stack */}
-					<ul className="flex items-center gap-1.5 flex-wrap">
-						{item.technologies.map((technology, index) => (
-							<li
-								key={index}
-								className="p-0.5 px-2.5 rounded-2xl whitespace-nowrap dark:text-neutral-950 dark:bg-neutral-100"
-							>
-								<p className="text-xs">{technology}</p>
-							</li>
-						))}
-					</ul>
-				</article>
-			))}
+						{/* Tech Stack */}
+						<ul className="flex items-center gap-1.5 flex-wrap">
+							{item.technologies.map((technology, index) => (
+								<li
+									key={index}
+									className="p-0.5 px-2.5 rounded-2xl whitespace-nowrap dark:text-neutral-950 dark:bg-neutral-100"
+								>
+									<p className="text-xs">{technology}</p>
+								</li>
+							))}
+						</ul>
+					</article>
+				))}
+			</div>
 		</section>
 	);
 }
