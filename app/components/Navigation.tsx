@@ -85,8 +85,7 @@ export const Navigation = () => {
 						<h1>Macqy Garcia</h1>
 					</div>
 					<p className="text-neutral-500 dark:text-neutral-400 max-w-3/4">
-						A Senior Software Engineer specializing in modern frontend
-						architectures
+						A Senior Software Engineer specializing in modern web technologies
 					</p>
 				</div>
 				<button
